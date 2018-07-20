@@ -3,8 +3,8 @@ import { render } from 'react-dom'
 import { Button, Steps } from 'antd'
 const Step = Steps.Step;
 
-import './main.less'
 import 'antd/dist/antd.css'
+import './main.less'
 
 type StepperState = { currentStep: number }
 
