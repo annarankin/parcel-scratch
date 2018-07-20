@@ -2,8 +2,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 module.exports = {
-  entry: './src/main.js',
-  mode: process.env.ENV || 'development',
+  entry: './src/main.jsx',
   devServer: {
     contentBase: './dist'
   },
@@ -22,6 +21,12 @@ module.exports = {
         }, {
           loader: 'less-loader' // compiles Less to CSS
         }]
+      }, {
+        test: /\.jsx$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader' // transpile our JSX to JS
+        }
       }
     ]
   },
