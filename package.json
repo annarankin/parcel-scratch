@@ -1,10 +1,7 @@
 {
-  "dependencies": {
-    "global": "^4.3.2",
-    "parcel-bundler": "^1.9.7"
-  },
   "name": "parcel-scratch",
   "version": "1.0.0",
   "main": "index.js",
+  "author": "Anna Rankin <anna@annarankin.com>",
   "license": "MIT"
 }
