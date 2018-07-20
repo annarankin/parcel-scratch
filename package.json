@@ -2,7 +2,7 @@
   "name": "parcel-scratch",
   "version": "1.0.0",
   "scripts": {
-    "dev": "webpack-dev-server --open --config webpack.config.js"
+    "dev": "webpack-dev-server --mode development --open --config webpack.config.js"
   },
   "private": true,
   "author": "Anna Rankin <anna@annarankin.com>",
