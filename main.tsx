@@ -11,4 +11,4 @@ const Greeting: React.SFC<{ hello: string }> = ({ hello }) => (
 
 const rootNode: HTMLDivElement = document.querySelector('#app')
 
-render(<Greeting hello='Howday' />, rootNode)
+render(<Greeting hello="Howday" />, rootNode)

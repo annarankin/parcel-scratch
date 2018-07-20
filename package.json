@@ -5,9 +5,12 @@
   "author": "Anna Rankin <anna@annarankin.com>",
   "license": "MIT",
   "devDependencies": {
-    "less": "^3.7.1"
+    "less": "^3.7.1",
+    "typescript": "^2.9.2"
   },
   "dependencies": {
+    "@types/react": "^16.4.6",
+    "@types/react-dom": "^16.0.6",
     "react": "^16.0.0",
     "react-dom": "^16.4.1"
   }
