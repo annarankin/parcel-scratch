@@ -1,7 +1,16 @@
 {
   "name": "parcel-scratch",
   "version": "1.0.0",
-  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --open --config webpack.config.js"
+  },
+  "private": true,
   "author": "Anna Rankin <anna@annarankin.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.4"
+  }
 }
