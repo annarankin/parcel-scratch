@@ -2,8 +2,8 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 module.exports = {
-  entry: './src/main.js',
-  mode: process.env.ENV || 'development',
+  entry: './src/main.tsx',
+  devtool: 'inline-source-map',
   devServer: {
     contentBase: './dist'
   },
@@ -22,6 +22,10 @@ module.exports = {
         }, {
           loader: 'less-loader' // compiles Less to CSS
         }]
+      }, {
+        test: /\.tsx?$/,
+        use: 'ts-loader', // Use Typescript to transpile our .ts & .tsx files to JS
+        exclude: /node_modules/
       }
     ]
   },

@@ -2,8 +2,8 @@
   "name": "parcel-scratch",
   "version": "1.0.0",
   "scripts": {
-    "dev": "ENV=development webpack-dev-server --open --config webpack.config.js",
-    "build": "ENV=production webpack --config webpack.config.js"
+    "dev": "webpack-dev-server --mode development --open --config webpack.config.js",
+    "build": "webpack --mode production --config webpack.config.js"
   },
   "private": true,
   "author": "Anna Rankin <anna@annarankin.com>",
@@ -14,8 +14,16 @@
     "less": "^3.7.1",
     "less-loader": "^4.1.0",
     "style-loader": "^0.21.0",
+    "ts-loader": "^4.4.2",
+    "typescript": "^2.9.2",
     "webpack": "^4.16.1",
     "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.4"
+  },
+  "dependencies": {
+    "@types/react": "^16.4.6",
+    "@types/react-dom": "^16.0.6",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
   }
 }
