@@ -5,7 +5,7 @@
   "author": "Anna Rankin <anna@annarankin.com>",
   "license": "MIT",
   "devDependencies": {
-    "less": "^3.7.1"
+    "less": "^3.8.0"
   },
   "dependencies": {
     "react": "^16.0.0",
